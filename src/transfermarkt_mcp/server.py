@@ -15,7 +15,11 @@ def create_mcp_server() -> FastMCP:
 
     # Import tools to register them
     from transfermarkt_mcp.tools.clubs import register_club_tools
+    from transfermarkt_mcp.tools.players import register_player_tools
+    from transfermarkt_mcp.tools.competitions import register_competition_tools
 
     register_club_tools(mcp)
+    register_player_tools(mcp)
+    register_competition_tools(mcp)
 
     return mcp

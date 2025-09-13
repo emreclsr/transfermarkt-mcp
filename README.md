@@ -7,6 +7,8 @@ A Model Context Protocol (MCP) server for accessing Transfermarkt football data.
 - 🔍 Search football clubs by name
 - 📊 Get detailed club profiles
 - 👥 Retrieve club player rosters
+- 🏆 Search and get competition information
+- ⚽ Search for individual players
 - 📄 Pagination support for search results
 - 🔧 Season-based filtering for players
 
@@ -51,9 +53,18 @@ python -m src.transfermarkt_mcp.main
 
 ### Available Tools
 
+#### Club Tools
 - `search_clubs(club_name, page_number=1)` - Search for clubs
 - `get_club_profile(club_id)` - Get club details
 - `get_club_players(club_id, season_id=None)` - Get club players
+
+#### Competition Tools
+- `search_competitions(competition_name, page_number=1)` - Search for competitions by name
+- `get_competition_clubs(competition_id)` - Get all clubs participating in a specific competition
+
+#### Player Tools
+- `search_players(player_name, page_number=1)` - Search for players by name
+- `get_player_by_id(player_id)` - Get detailed information about a specific player
 
 ## Development
 
