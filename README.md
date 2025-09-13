@@ -39,7 +39,7 @@ cp .env.example .env
 
 Create a `.env` file with:
 ```
-TRANSFERMARKT_API_BASE_URL=http://127.0.0.1:8000
+TRANSFERMARKT_API_BASE_URL=https://transfermarkt-api.fly.dev
 LOG_LEVEL=INFO
 ```
 
@@ -78,6 +78,33 @@ pytest tests/
 black src/
 flake8 src/
 ```
+
+## Claude Desktop Config Example
+```json
+{
+  "mcpServers": {
+    "transfermarkt": {
+      "command": "your-uv-location/uv",
+      "args": [
+        "run",
+        "--with",
+        "fastmcp",
+        "--with",
+        "requests",
+        "fastmcp",
+        "run",
+        "your-workdir/transfermarkt-mcp/src/transfermarkt_mcp/main.py"
+      ],
+      "cwd": "your-workdir/transfermarkt-mcp/src",
+      "env": {
+        "BASE_URL": "https://transfermarkt-api.fly.dev",
+        "PYTHONPATH": "your-workdir/transfermarkt-mcp/src"
+      }
+    }
+  }
+}
+```
+
 
 ## License
 
