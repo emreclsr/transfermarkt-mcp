@@ -1,5 +1,5 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "maintainers": ["emreclsr"],
-  "entrypoint": "src.transfermarkt_mcp.main:mcp"
+  "entrypoint": "transfermarkt_mcp.main:mcp"
 }
