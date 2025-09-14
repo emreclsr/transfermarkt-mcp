@@ -1,10 +1,4 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "maintainers": ["emreclsr"],
-  "entrypoint": "src.transfermarkt_mcp.main:mcp",
-  "license": "MIT",
-  "homepage": "https://github.com/emreclsr/transfermarkt-mcp",
-  "keywords": ["transfermarkt", "football", "soccer", "sports", "players", "clubs", "competitions"],
-  "categories": ["Sports", "Data", "Scraping"],
-  "description": "Access Transfermarkt football data including club profiles, player information, and competition details."
+  "maintainers": ["emreclsr"]
 }
